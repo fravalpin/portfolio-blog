@@ -1,231 +1,70 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: Cómo programar tu propio blog fácil y gratis con Gatsby y React
+date: "2022-04-13"
+description: "Se describe paso a paso como programar tu propio blog fácilmente y gratis con Gatsby, framework de React"
+tags: ["Gatsby", "Programación", "Blog", "React"]
 ---
 
-This is my first post on my new fake blog! How exciting!
+A continuación, voy a contar como he creado un blog personal, esté que estás leyendo con Gatsby y como subirlo a la propia nube de Gatsby de forma gratuita.
 
-I'm sure I'll write a lot more interesting things in the future.
+## ¿Qué es Gatsby JS?
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+<a href="https://www.gatsbyjs.com/" target="_blank">Gatsby</a> es un rápido y flexible framework de React donde se pueden construir páginas webs estáticas de forma muy rápida y sencilla. Al ser estáticas no requiere de una base de datos por lo que el contenido se carga de forma muy rápida y no necesitas un hosting de grandes prestaciones, de hecho, puedes subir tu blog de forma gratuita a su nube.
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+Además, cuenta con varias plantillas de tipos como Blog, Portafolio e integraciones con varios CMS donde está prácticamente todo configurado a falta de tus personalizaciones y usa la tecnología <a href="https://es.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a> para escribir los artículos y <a href="https://graphql.org/" target="_blank">GraphQL</a> para realizar consultas sobre tu contenido estático.
 
-![Chinese Salty Egg](./salty_egg.jpg)
 
-You can also write code blocks here!
+Por último, Gatsby Cloud usa como repositorio de código GitHub, GitLab o Bitbucket, se conecta internamente y por cada push te crea una nueva compilación.
 
-```js
-const saltyDuckEgg = "chinese preserved food product"
+## ¿Cómo programar un blog con Gatsby?
+
+Lo primero, debemos tener instalado en nuestro sistema <a href="https://nodejs.org/es/" target="_blank">Node.js</a> y el IDE que más te guste, por ejemplo, Visual Studio Code y Git con una cuenta en GitHub, GitLab o Bitbucket. 
+
+Con todo listo, accedemos a la página de Gatsby y nos registramos usando cualquiera de sus métodos. Una vez dentro nos aparecerá nuestro panel de sitios, de los cuales podemos tener uno de forma gratuita y pulsamos sobre el botón Add a site ![Nuevo sitio](./nuevoSitio.png)
+
+Ahora nos permite elegir el repositorio de código a utilizar, el cual nos pedirá que otorguemos permisos para poder conectar con él y si queremos usar alguna plantilla, utilizaremos en este ejemplo "Gatsby Starter Blog".
+
+Una vez configurado, nos creará un nuevo repositorio con el nombre que hayamos seleccionado y nos mostrará el panel de nuestros sitios en Gatsby.
+
+
+### Editar y ejecutar el blog creado en Gatsby Cloud de forma local
+
+Para poder ejecutar aplicaciones creadas con Gatsby debemos tener instalado su cliente, para ello usaremos el repositorios de paquetes npm a través de la consola de Windows usando el siguiente comando.
+```
+npm i -g gatsby-cli
 ```
 
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
+También, evidentemente, tenemos que tener nuestro código del blog de forma local por lo que nos traemos una copia de nuestro repositorio usando Git.
 
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
 
-This is a paragraph.
-
-    This is a paragraph.
-
-# Header 1
-
-## Header 2
-
-    Header 1
-    ========
-
-    Header 2
-    --------
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1
-    ## Header 2
-    ### Header 3
-    #### Header 4
-    ##### Header 5
-    ###### Header 6
-
-# Header 1
-
-## Header 2
-
-### Header 3
-
-#### Header 4
-
-##### Header 5
-
-###### Header 6
-
-    # Header 1 #
-    ## Header 2 ##
-    ### Header 3 ###
-    #### Header 4 ####
-    ##### Header 5 #####
-    ###### Header 6 ######
-
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> ## This is a header.
->
-> 1. This is the first list item.
-> 2. This is the second list item.
->
-> Here's some example code:
->
->     Markdown.generate();
-
-    > ## This is a header.
-    > 1. This is the first list item.
-    > 2. This is the second list item.
-    >
-    > Here's some example code:
-    >
-    >     Markdown.generate();
-
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
-
-```markdown
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
+```
+git clone URL_DE_TU_BLOG
 ```
 
-- `code goes` here in this line
-- **bold** goes here
+Ahora, al ser un entorno de node, debemos instalar todas la librerías que usa nuestro proyecto, por lo que, accedemos a la carpeta que descargamos anteriormente y ejecutamos 
 
-```markdown
-- `code goes` here in this line
-- **bold** goes here
+```
+npm install
 ```
 
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
+¡Ya está todo listo! Solo nos queda levantar el servidor para poder ver nuestra aplicación en el navegador, para ello utilizaremos el comando
 
-```markdown
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
+
+```
+gatsby develop URL_DE_TU_BLOG
 ```
 
-1. `code goes` here in this line
-1. **bold** goes here
+Y ya podremos acceder a nuestro blog a través de la URL http://localhost:8000
 
-```markdown
-1. `code goes` here in this line
-1. **bold** goes here
+### Desplegar en Gatsby Cloud
+
+Para desplegar tu aplicación en Gatsby Cloud tan solo tienes que realizar un Push a tu repositorio, el solo se encarga de compilar el nuevo código y desplegar en su nube.
+
 ```
+git push
+```
+### Conclusión
 
-Paragraph:
+Como conclusión, me ha parecido una forma muy fácil y económica de programar tu propio blog y desplegarlo al mundo. Además al no utilizar una base de datos se siente mucho más rápido de crear pero sin perder la gracia de poder hacer consultas de tus propios post al poder utilizar GraphQL.
 
-    Code
-
-<!-- -->
-
-    Paragraph:
-
-        Code
-
----
-
----
-
----
-
----
-
----
-
-    * * *
-
-    ***
-
-    *****
-
-    - - -
-
-    ---------------------------------------
-
-This is [an example](http://example.com "Example") link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
-
-    This is [an example](http://example.com "Example") link.
-
-    [This link](http://example.com) has no title attr.
-
-    This is [an example] [id] reference-style link.
-
-    [id]: http://example.com "Optional Title"
-
-_single asterisks_
-
-_single underscores_
-
-**double asterisks**
-
-**double underscores**
-
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-
-This paragraph has some `code` in it.
-
-    This paragraph has some `code` in it.
-
-![Alt Text](https://placehold.it/200x50 "Image Title")
-
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
+La opción de poder desplegarlo a Gatsby Cloud de forma gratuita y de forma tan sencilla, es un puntazo.
