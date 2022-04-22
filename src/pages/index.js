@@ -13,7 +13,7 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="Francisco Valle Blog - Todos los post" />
+        <Seo title="Paco Valle Blog - Todos los post" />
         <Bio />
         <p>No hay ningún post.</p>
       </Layout>
@@ -22,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Francisco Valle Blog - Todos los post" />
+      <Seo title="Paco Valle Blog - Todos los post" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -77,7 +77,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "DD/MM/YYYY")
           title
           description
           tags
