@@ -2,7 +2,7 @@
 title: Cómo programar tu propio blog fácil y gratis con Gatsby y React
 date: "2022-04-13"
 description: "Se describe paso a paso como programar tu propio blog fácilmente y gratis con Gatsby, framework de React"
-tags: ["Gatsby", "Programación", "Blog", "React"]
+tags: ["Gatsby", "Blog", "React"]
 ---
 
 A continuación, voy a contar como he creado un blog personal, esté que estás leyendo con Gatsby y como subirlo a la propia nube de Gatsby de forma gratuita.
@@ -63,8 +63,17 @@ Para desplegar tu aplicación en Gatsby Cloud tan solo tienes que realizar un Pu
 ```
 git push
 ```
+
+### Apuntar tu dominio al blog
+
+Este paso es opcional, pero si quieres tener un blog más profesional deberías comprar un dominio y referenciarlo al blog.
+
+Para ello, en Gatsby Cloud, debes de acceder a al dashboard y al sitio en concreto, Site Settings (arriba a la derecha), Hosting (a la izquierda), Add domain.
+
+Al añadir tu dominio, aparecen dos IPs asignadas a tu blog, debajo de "Please update your DNS records to validate domain(s)". Debes usar cualquiera de ellas para configurarla en el apartado DNS del panel de configuración donde compraste el dominio.
+
 ### Conclusión
 
-Como conclusión, me ha parecido una forma muy fácil y económica de programar tu propio blog y desplegarlo al mundo. Además al no utilizar una base de datos se siente mucho más rápido de crear pero sin perder la gracia de poder hacer consultas de tus propios post al poder utilizar GraphQL.
+Como conclusión, me ha parecido una forma muy fácil y económica, ya que solo pagarías el dominio, si es que lo quieres, de programar tu propio blog y desplegarlo al mundo. Además al no utilizar una base de datos se siente mucho más rápido de crear pero sin perder la gracia de poder hacer consultas de tus propios post al poder utilizar GraphQL.
 
 La opción de poder desplegarlo a Gatsby Cloud de forma gratuita y de forma tan sencilla, es un puntazo.
