@@ -8,7 +8,7 @@ module.exports = {
     description: `Un blog sobre mis aventuras con la programación y la tecnología.`,
     siteUrl: `https://pacovalle.com/`,
     social: {
-      twitter: ``,
+      twitter: `pakvicio`,
     },
   },
   plugins: [
