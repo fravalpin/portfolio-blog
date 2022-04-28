@@ -11,18 +11,18 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {props.headComponents}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPNKQ272NJ" ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPNKQ272NJ"></script>
         <script dangerouslySetInnerHTML= {{
            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-            gtag('config', 'G-NPNKQ272NJ');
+  gtag('config', 'G-NPNKQ272NJ');
           `,
           }}
         />
+        {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
