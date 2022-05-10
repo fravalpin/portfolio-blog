@@ -5,7 +5,7 @@ description: "Se describe paso a paso como programar tu propio blog fácilmente 
 tags: ["Gatsby", "Blog", "React"]
 ---
 
-A continuación, voy a contar como he creado un blog personal, esté que estás leyendo con Gatsby y como subirlo a la propia nube de Gatsby de forma gratuita.
+A continuación, voy a contar cómo he creado un blog personal, esté que estás leyendo con Gatsby y como subirlo a la propia nube de Gatsby de forma gratuita.
 
 ## ¿Qué es Gatsby JS?
 
@@ -22,7 +22,7 @@ Lo primero, debemos tener instalado en nuestro sistema <a href="https://nodejs.o
 
 Con todo listo, accedemos a la página de Gatsby y nos registramos usando cualquiera de sus métodos. Una vez dentro nos aparecerá nuestro panel de sitios, de los cuales podemos tener uno de forma gratuita y pulsamos sobre el botón Add a site ![Nuevo sitio](./nuevoSitio.png)
 
-Ahora nos permite elegir el repositorio de código a utilizar, el cual nos pedirá que otorguemos permisos para poder conectar con él y si queremos usar alguna plantilla, utilizaremos en este ejemplo "Gatsby Starter Blog".
+Ahora nos permite elegir el repositorio de código a utilizar, el cual nos pedirá que otorgamos permisos para poder conectar con él y si queremos usar alguna plantilla, utilizaremos en este ejemplo "Gatsby Starter Blog".
 
 Una vez configurado, nos creará un nuevo repositorio con el nombre que hayamos seleccionado y nos mostrará el panel de nuestros sitios en Gatsby.
 
@@ -66,7 +66,7 @@ git push
 
 ### Apuntar tu dominio al blog
 
-Este paso es opcional, pero si quieres tener un blog más profesional deberías comprar un dominio y referenciarlo al blog.
+Este paso es opcional, pero si quieres tener un blog más profesional deberías comprar un dominio y referenciar al blog.
 
 Para ello, en Gatsby Cloud, debes de acceder a al dashboard y al sitio en concreto, Site Settings (arriba a la derecha), Hosting (a la izquierda), Add domain.
 
