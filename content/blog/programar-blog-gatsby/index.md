@@ -1,5 +1,5 @@
 ---
-title: Cómo programar tu propio blog fácil y gratis con Gatsby y React
+title: "Cómo programar tu propio blog fácil y gratis con Gatsby y React"
 date: "2022-04-13"
 description: "Se describe paso a paso como programar tu propio blog fácilmente y gratis con Gatsby, framework de React"
 tags: ["Gatsby", "Blog", "React"]

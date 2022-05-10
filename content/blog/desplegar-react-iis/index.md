@@ -1,5 +1,5 @@
---
-title: Cómo desplegar una aplicación React en IIS
+---
+title: "Cómo desplegar una aplicación React en IIS"
 date: "2022-05-06"
 description: "Se describe paso a paso cómo desplegar una aplicación creada con React en el IIS (Internet Information Server)"
 tags: ["IIS", "React"]
