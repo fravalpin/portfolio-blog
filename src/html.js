@@ -11,9 +11,13 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NPNKQ272NJ"></script>
-        <script dangerouslySetInnerHTML= {{
-           __html: `
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NPNKQ272NJ"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -22,6 +26,11 @@ export default function HTML(props) {
           `,
           }}
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9448695082856786"
+          crossorigin="anonymous"
+        ></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
